@@ -92,11 +92,8 @@ def get_window_kernel(window_size, minimal_window_value):
     Returns:
         kernel [gamma^0, gamma^1,..,gamma^(tau-1)]
     """
-    kernel = np.ones(window_size)
     gamma = minimal_window_value ** (1 / (window_size - 1))
-    for i in range(1, window_size):
-        kernel[i:] *= gamma
-    return kernel
+    return gamma ** np.arange(window_size)
 
 
 def get_denoise_kernel():
