@@ -1,4 +1,4 @@
-# A simplified Liquid State Machine
+# Quantized Liquid State Machines
 
 [[PDF]](https://raw.githubusercontent.com/m4urin/SimpleLSM/main/paper.pdf)
 
